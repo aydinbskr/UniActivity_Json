@@ -1,0 +1,27 @@
+{"activities":[
+    {
+        "type":"Hiking",
+        "title":"Doğa yürüyüşü",
+        "date":"27.07.2022",
+        "place":"Bilkent",
+        "description":"With over 14 years of public accounting... ",
+        "image":"img/hiking.jpg"
+    },
+    {
+        "type":"Sport",
+        "title":"Basketbol turnuvası",
+        "date":"28.07.2022",
+        "place":"AYBU",
+        "description":"With over 14 years of public accounting... ",
+        "image":"img/basketball.jpg"
+    },
+    {
+        "type":"Concert",
+        "title":"Bahar Konseri",
+        "date":"30.07.2022",
+        "place":"AYBU",
+        "description":"With over 14 years of public accounting... ",
+        "image":"img/concert.jpg"
+    }
+
+]}

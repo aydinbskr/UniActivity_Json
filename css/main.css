@@ -1,0 +1,807 @@
+/* GENERAL SETTINGS */
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.ttf');
+}
+
+body{
+    background: white;
+    color: #3f3f3f;
+    font: 14px / 28px;
+    font-family: 'Raleway',Arial;
+}
+h1 {
+    font-size: 52px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 16px;
+    color:#3AC280;
+    transition: all .5s ease;
+}
+
+.sectionHeader{
+    background: #3AC280;
+    border-bottom: 6px solid #424242;
+    height: 60px;
+    color:#fff;
+    display: inline-block;
+    line-height: 60px;
+    font-size: 24px;
+    padding: 5px 40px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.sectionArea{
+    padding: 80px 0;
+}
+
+/* GRID SETTINGS */
+.container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+.featuresBody .container, .engineBody .container{
+    justify-content: space-between;
+}
+.col3{
+    flex-grow: 1;
+    width: 33.33%;
+}
+.col2{
+    flex-grow: 1;
+    width: 50%;
+    padding: 20px;
+}
+/* WEATHER SETTINGS */
+div.widget
+{
+  position: relative;
+ 
+  background-color: #fcfdfd;
+  border-radius: 9px;
+  margin: 5px;
+  padding: 5px;
+  padding-right: 30px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+div.date
+{
+  font-size: 14px;
+  font-weight: bold;
+  color: #424242;
+}
+
+div.city
+{
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 5px;
+  color: #3f3f3f;
+}
+
+div.temp
+{
+  font-size: 18px;
+  color: #3AC280;
+  font-weight: 100;
+}
+
+div.panel
+{
+  display: inline-block;
+}
+
+div.right-panel
+{
+  position: relative;
+  float: right;
+  padding-left: 10px;
+}
+/* HOME SETTINGS */
+header{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin-bottom: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+   
+    background-color: #fff;
+    z-index:1;
+    
+}
+.slider{
+   margin-top: 72px;
+}
+header .logo{
+    margin-right: auto;
+}
+header .logo img{
+    display: block;
+    height: 68px;
+}
+.menu li{
+    float: left;
+    font-weight: bold;
+}
+.menu li a{
+    padding: 27px 17px;
+    display: block;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color:#424242;
+    transition: all .5s ease;
+}
+
+.menu li a:hover{
+    color: #3AC280;
+    text-decoration: underline;
+}
+
+#mainSlider{
+    height: 500px;
+    background: url('../img/ashim.jpg') center center no-repeat;
+    background-size: cover;
+}
+.slider {
+    width: 100%;
+}
+#mainCaption{
+    height: 500px;
+    background: rgba(0,0,0, .3) ;
+}
+.caption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+}
+
+.featuresTop{
+    text-align: center;
+}
+.item{
+    padding: 10px 20px;
+}
+.zoom{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+.zoom img{
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all .5s ease;
+}
+.item .itemText{
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #3AC280;
+}
+
+.item:hover .zoom img{
+    transform: scale(1.25);
+}
+.item:hover h3{
+    color:#fff;
+}
+.item:hover .itemText{
+    background: #3AC280;
+    color:#fff;
+    transition: all .5s ease;
+}
+.btnDetails{
+    color: #3AC280;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #3AC280;
+    transition: all .5s ease;
+}
+
+.item:hover .btnDetails{
+    color: #fff;
+    border: 1px solid #fff;
+}
+.itemText p{
+    margin: 20px 0;
+}
+
+#paralax{
+    background: linear-gradient(
+        rgba(0,0,0,.7),
+         rgba(0,0,0,.7)
+    ),
+    url('../img/paralax.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+#paralax p {
+    color:#fff;
+}
+.pastActivityTop{
+    text-align: center;
+
+}
+.pastActivityContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+footer{
+    background: #424242;
+    text-align: center;
+}
+.footerItem{
+    padding: 20px;
+
+}
+
+.footerItem img{
+    height: 50px;
+    
+}
+
+footer  h3{
+    color:#fff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+footer .fa{
+    font-size: 30px;
+    color: #3AC280;
+    line-height: 50px;
+    transition: .3s ease;
+}
+footer .fa:hover{
+    color: #fff;
+}
+footer p{
+    color: #fff;
+    line-height: 20px;
+}
+.footerLinks li{
+    margin-bottom: 5px;
+}
+.footerLinks a{
+    text-decoration: none;
+    color: #3AC280;
+    letter-spacing: 2px;
+    transition: .3s ease;
+}
+.footerLinks a:hover{
+    
+    color: #fff;
+    text-decoration: underline;
+}
+.socialLinks li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    
+}
+/* ACTIVITY SETTINGS */
+#activitySlider{
+    
+    height: 250px;
+    background: url('../img/ashim.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#activityCaption{
+    height: 250px;
+    background: rgba(0,0,0, .7) ;
+}
+#inspect{
+    background-color: #f5f5f5;
+}
+.inspectTop{
+    text-align: center;
+}
+.leftSide{
+    width: 30%;
+}
+
+.ActivityForm{
+    margin: 0 auto;
+    width: 100%;
+}
+.searchHeader{
+    
+    border-bottom: 3px solid #424242;
+   
+    color:#424242;
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 5px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.ActivityForm .formItem{
+    display: flex;
+    align-items: center;
+}
+.ActivityForm .formField{
+    height: 25px;
+    width: 25px; 
+    
+}
+.formDateField{
+    
+    color: #fff;
+    background: #3AC280;
+    border: none;
+    padding: 5px;
+    width: 92%;
+    display: block;
+    font-size: 14px;
+}
+/* On mouse-over, add a grey background color */
+.ActivityForm .formField:hover {
+    background-color: #ccc;
+    cursor: pointer;
+  }
+
+.ActivityForm .formItemDate{
+    display: flex;
+  align-items: center;
+  padding-left: 5px;
+}
+.formItemDate span::after {
+    padding-left: 5px;
+  }
+  
+  .formItemDate input:invalid + span::after {
+    content: '✖';
+  }
+  
+  .formItemDate input:valid+span::after {
+    content: '✓';
+  }
+
+.ActivityForm .formLabel{
+    color:rgb(32, 30, 30);
+   
+}
+
+.ActivityForm .formBtn{
+    display: block;
+    border: none;
+    background: #3AC280;
+    color: #fff;
+    padding: 12px 25px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.formBtn:hover{
+    background-color: #53cf99;
+}
+.inspectBody .col2{
+    display: flex;
+}
+.searchTextbox{ 
+   width: 90%;
+   margin: 5px auto;
+   
+}
+.searchTextbox i {
+    position: absolute;
+    padding: 20px 2px;
+    font-size: 17px;
+    min-width: 40px;
+}
+
+.searchTextbox input[type=text] {
+    padding: 10px 20px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    width: 100%;
+  }
+
+  .searchTextbox input[type=text]:hover{
+    background: #3AC280;
+    color: #fff;
+
+  }
+.inspectContainer{
+    margin: 10px auto;
+    padding: 5px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.inspectImage{
+    width: 25%;
+}
+.inspectImage img{
+    width: 100%;
+    height: auto;
+}
+.inspectText{
+    width: 75%;
+    padding-left: 20px;
+}
+.date{
+    color: #333;
+    font-size: 12px;
+    font-style: italic;
+}
+h4{
+    color: #3AC280;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.inspectText a{
+    float: right;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 10%;
+}
+
+
+
+/* ABOUT SETTINGS */
+#aboutSlider{
+    height: 250px;
+    background: url('../img/ashim.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#aboutCaption{
+    height: 250px;
+    background: rgba(0,0,0, .7) ;
+}
+#aboutUs{
+    background-color: #f5f5f5;
+}
+.aboutusTop{
+    text-align: center;
+}
+.aboutusBody .containerFluid{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.aboutusBody .col2{
+    display: flex;
+
+}
+.aboutusDate{
+    flex: 1;
+    text-align: center;
+    background-color: #3AC280;
+    color: #fff;
+}
+.aboutusDate p{
+    font-size: 30px;
+    letter-spacing: 2px;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.aboutusImage{
+    flex:2;
+
+}
+.aboutusImage img{
+    width: 100%;
+    height: 100%;
+}
+.aboutText{
+    flex: 3;
+    margin-left: 10px;
+}
+.aboutText p{
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.teamTop{
+    text-align: center;
+}
+.teamBody .containerFluid{
+    display: flex;
+    width: 100%;
+}
+.teamMember{
+    position: relative;
+    width: 100%;
+}
+.teamMemberImg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.teammemberOverlay{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-color: #3AC280;
+    transition: .5s ease;
+}
+
+.teamMember:hover .teammemberOverlay{
+    opacity: 0;
+}
+.teamMember:hover .teamMemberInfo, .teamTitle{
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.teamMemberInfo{
+    color: #fff;
+    background-color: rgba(80, 13, 22, .7);
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+    transition: .5s ease;
+    padding: 20px;
+    text-align: center;
+}
+.memberSocialLinks{
+    text-align: center;
+}
+.memberSocialLinks li{
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.memberSocialLinks li .fa{
+    color: #fff;
+}
+
+/* CONTACT SETTINGS */
+
+#contactSlider{
+    height: 250px;
+    background: url('../img/ashim.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#contactCaption{
+    height: 250px;
+    background: rgba(0,0,0, .7) ;
+}
+
+.contactTop{
+    text-align: center;
+}
+.wrapper{
+    margin: 0 auto;
+    width: 100%;
+}
+.contactForm{
+    margin: 0 auto;
+    width: 60%;
+}
+.formItem{
+    margin-bottom: 10px;
+    width: 100%;
+}
+.formShape{
+    color:#fff;
+    float: left;
+    background: #3AC280;
+    padding: 8px;
+    width: 8%;
+    text-align: center;
+}
+.formField{
+    color: #fff;
+    background: #3AC280;
+    border: none;
+    padding: 16px;
+    width: 92%;
+    display: block;
+    font-size: 14px;
+}
+.formBtn{
+    display: block;
+    border: none;
+    background: #3AC280;
+    color: #fff;
+    padding: 12px 25px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+.formBtn:hover{
+    background-color: #53cf99;
+}
+input:required:invalid, input:focus:invalid {
+		  
+	box-shadow: 0 0 4px rgb(255, 40, 40);
+	border: 3px solid rgb(199, 0, 0);
+  }
+  input:required:valid {
+	  box-shadow :0 0 4px #181;
+	  border : 3px solid #060;
+  }
+  textarea {
+    background-color:#FAFAFA;
+    border:#EFEFEF solid 1px;
+    color:#333;
+    height:150px;
+   
+}
+
+/* richtext custom style */
+.richText {
+    margin-top: 40px;
+    -webkit-box-shadow: 0 0 20px 0 #999;
+    -moz-box-shadow: 0 0 20px 0 #999;
+    box-shadow: 0 0 20px 0 #999;
+    
+}
+
+/* LOGIN SETTINGS */
+#login{
+    margin: 0 auto;
+    width: 50%;
+}
+.loginTop{
+    text-align: center;
+}
+.wrapper{
+    margin: 0 auto;
+    width: 100%;
+}
+.loginForm{
+    margin: 0 auto;
+    width: 60%;
+}
+/* MEDIA QUERIES */
+@media screen and (max-width:960px){
+    .caption h1{
+       
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+    footer .fa{
+        font-size: 24px;
+
+    }
+    footer h3{
+        font-size: 16px;
+    }
+
+    .inspectBody .container{
+        flex-direction: column;
+        
+        color: red;
+    }
+   
+    .inspectBody .container .inspectImage{
+        width: 100%;
+    }
+    .inspectImage img{
+        width: 50%;
+    }
+    .inspectBody .container .inspectText{
+        width: 90%;
+    }
+    .aboutusBody .col2{
+        flex-direction: column;
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+
+@media screen and (max-width:720px){
+   
+    header  .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    header .logo{
+        margin: 0 auto;
+    }
+  
+    .caption h1{
+        
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+    .featuresBody .container{
+        flex-direction: column;
+
+    }
+    .featuresBody .container .col3{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .engineBody .container{
+        flex-direction: column;
+    }
+    .pastActivityBody .container .col2{
+        width: 80%;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 auto;
+    }
+    .sectionHeader{
+        font-size: 24px;
+    }
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container .col3{
+        width: 100%;
+    }
+   
+    .inspectBody .container .col2{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .teamMemberInfo {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .teamTitle{
+        font-size: 14px;
+    }
+    .formShape{
+        display: none;
+    }
+}
+
+@media screen and (max-width:540px){
+    .caption h1{
+        font-size: 20px;
+        letter-spacing: 0px;
+    }
+    .featuresBody .container .col3{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .pastActivityBody .container .col2{
+        width: 100%;
+        
+    }
+    .sectionHeader{
+        font-size: 20px;
+    }
+    .contactForm{
+        width: 80%;
+    }
+
+}
